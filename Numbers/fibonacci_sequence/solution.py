@@ -37,7 +37,7 @@ def fibonacci_sum(n):
     if n < 2:
         return 1
     else:
-        return fibonacci(n-1) + fibonacci(n-2)
+        return fibonacci_sum(n-1) + fibonacci_sum(n-2)
 
 if __name__ == "__main__":
     main()
