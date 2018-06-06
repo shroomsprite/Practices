@@ -1,5 +1,5 @@
 def main():
-    choice = input("First prime number? (0 for yes, 1 for stop): ")
+    choice = input("First prime number? (0 for yes, others to stop): ")
     num = 2
     while True:
         if choice == 0:
@@ -10,10 +10,8 @@ def main():
             else:
                 while not isPrime(num):
                     num = num+1
-        elif choice == 1:
-            break
         else:
-            main()
+            break
 
 def isPrime(n):
     flag=True
